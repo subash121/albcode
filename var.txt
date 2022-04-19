@@ -1,0 +1,8 @@
+variable "ami" {
+    description = "instance ami"
+    default ="ami-03ededff12e34e59e"
+}
+variable "ins-type" {
+    default = "t2.micro"
+  
+}

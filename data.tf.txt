@@ -1,0 +1,18 @@
+data "aws_vpc" "pro-vpc" {
+  filter {
+    name   = "vpc-id"
+    values = ["vpc-05241e8ac176ee493"]
+  }
+}
+data "aws_subnet" "pro-sub1" {
+  filter {
+    name   = "subnet-id"
+    values = ["subnet-0f22ea0728c1fa812"]
+  }
+}
+data "aws_subnet" "pub-sub2" {
+  filter {
+    name   = "subnet-id"
+    values = ["subnet-022ab376722867dd2"]
+  }
+}
